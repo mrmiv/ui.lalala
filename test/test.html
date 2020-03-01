@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          font-family: 'Rounded Mplus 1c';
+      }
+
+      .sider{
+        width: 200px;
+        min-width: 200px;
+        position: fixed;
+        left: 0;
+        background: #111D5E;
+        height: 100vh;
+      }
+
+      nav{
+          margin-top: 75%;
+      }
+      .nav-link{
+        color: white;
+        font-family: 'Rounded Mplus 1c';
+        font-size: 12px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        transition: 50ms;
+      }
+
+      .nav-link.active{
+          background: #fff;
+          font-weight: bold;
+          color:#111D5E;
+      }
+
+      .nav-link:hover{
+          background: rgb(240, 240, 255);
+          color:#111D5E;
+      }
+
+      .nav-link:active{
+          background: #fff;
+          color:#111D5E;
+      }
+
+      .collapselinks{
+        background-color: #080F36 !important;
+      }
+      .collapselinks>.nav-link{
+        font-weight: normal !important;
+      }
+
+      .logo-span{
+        margin: 0 0 0 20px;
+      }
+
+      #logo>img{
+        height: 35px;
+        width: 35px;
+      }
+  </style>
+
+
+</head>
+  <body>
+    
+    <section class="sider">
+        
+        <span class="logo-span">
+          <span id="logo"><img src="./LOGO.svg"></span>
+          <a class="navbar-brand" href="#" style="color:white; font-size:14px">Кафедра УИ</a>
+        </span>
+
+        <nav class="nav flex-column accordion" id="accordionExample">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#news" aria-expanded="true" aria-controls="collapseOne">Новости</a>
+            <div id="news" class="collapse collapselinks" aria-labelledby="headingnews" data-parent="#accordionExample">
+                <a class="nav-link" href="#">Объявления кафедры</a>
+                <a class="nav-link" href="#">Конференции</a>
+                <a class="nav-link" href="#">Стипендии и гранты</a>
+            </div>
+            <a class="nav-link" href="#">О кафедре</a>
+
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#student" aria-expanded="true" aria-controls="collapseTwo">Обучающимся</a>
+            <div id="student" class="collapse collapselinks" aria-labelledby="headingstudent" data-parent="#accordionExample">
+                <a class="nav-link" href="#">Бакалавр</a>
+                <a class="nav-link" href="#">Магистрант</a>
+            </div>
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#degree" aria-expanded="true" aria-controls="collapseThree">Поступающим</a>
+            <div id="degree" class="collapse collapselinks" aria-labelledby="headingdegree" data-parent="#accordionExample">
+                <a class="nav-link" href="#">Абитуриент</a>
+                <a class="nav-link" href="#">Магистратура ФИТ</a>
+            </div>
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#literature" aria-expanded="true" aria-controls="collapseFour">Библиография</a>
+            <div id="literature" class="collapse collapselinks" aria-labelledby="headingliterature" data-parent="#accordionExample">
+                <a class="nav-link" href="#">Список литературы кафедры</a>
+            </div>
+          </nav>
+
+    </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
